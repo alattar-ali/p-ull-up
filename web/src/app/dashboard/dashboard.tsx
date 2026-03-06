@@ -54,7 +54,7 @@ export default function PublicDashboardPage() {
           {/* Navigates to the login page your teammate built */}
           <Link href="/login" className={styles.navLink}>Login</Link>
           
-          <Link href="/login">
+          <Link href="/signUp">
             <button className={styles.signUpBtn}>Create Account</button>
           </Link>
         </div>

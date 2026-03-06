@@ -1,6 +1,6 @@
 /**
- * Login route styles. CSS Module (login.module.css) so class names are scoped
- * and don't clash with other pages. Used by loginpage.tsx at app root.
+ * Sign-up route styles. CSS Module (signUp.module.css) so class names are scoped
+ * and don't clash with other pages. Used by signUp.tsx.
  */
 
 /* Shared brand color variables (match dashboard.module.css) */
@@ -124,6 +124,9 @@
 .btnSecondary {
   flex: 1;
   height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid #e5e7eb;
   border-radius: 12px;
   background: #fff;
@@ -133,6 +136,7 @@
   letter-spacing: 0.05em;
   cursor: pointer;
   font-family: inherit;
+  text-decoration: none;
   transition: background 0.2s, color 0.2s;
 }
 

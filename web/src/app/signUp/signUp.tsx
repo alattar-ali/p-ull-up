@@ -6,7 +6,7 @@
  * Styles are in login.module.css (CSS Modules for scoped class names).
  */
 import Link from "next/link";
-import styles from "./login.module.css";
+import styles from "./signUp.module.css";
 
 /** Inline SVG icons for form fields—no icon library dependency. Reuse styles.inputIcon for position/color. */
 const PersonIcon = () => (

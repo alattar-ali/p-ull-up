@@ -3,4 +3,4 @@
  * inside this folder to define the /login route. We keep the main UI in
  * login.tsx so it can be reused if needed.
  */
-export { default } from "./login";
+export { default } from "./signUp";

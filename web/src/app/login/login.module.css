@@ -1,0 +1,80 @@
+/* Container covers full screen and centers content */
+.container {
+  height: 100vh; /* 100% of viewport height */
+  display: flex; /* use flexbox for centering */
+  justify-content: center; /* horizontal center */
+  align-items: center; /* vertical center */
+  background: linear-gradient(180deg, #c026d3, #4f46e5); /* purple gradient */
+}
+
+/* Card holding the form */
+.card {
+  background: white;
+  padding: 80px;
+  border-radius: 32px; /* rounded corners */
+  width: 640px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); /* subtle shadow for depth */
+}
+
+.title {
+  font-size: 36px;      /* larger text, adjust as needed */
+  font-weight: 700;     /* bold */
+  margin-bottom: 40px;  /* space between title and inputs */
+  text-align: center;   /* optional: center the title */
+}
+
+/* Inputs and buttons share same width and box-sizing for alignment */
+.input, .signin, .google {
+  width: 100%; /* full width of the card minus padding */
+  box-sizing: border-box; /* ensures padding/border don’t break width */
+  font-size: 20px; /* larger text */
+  padding: 20px 24px; /* vertical + horizontal padding */
+  border-radius: 16px; /* rounded corners */
+  border: 2px solid #888888; /* thick grey border */
+}
+
+/* Vertical spacing between elements */
+.input + .input,
+.input + .signin,
+.signin + .google {
+  margin-top: 24px; /* 2x original 12px spacing */
+}
+
+
+.input {
+  width: 100%;
+  padding: 20px 24px;
+  font-size: 20px;
+  border-radius: 16px;
+  border: 2px solid #888888;
+  box-sizing: border-box;
+}
+
+.signin {
+  background: #070709;
+  color: white;
+  margin-bottom: 12px;
+}
+
+.signup {
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+.signup a {
+  text-decoration: underline;  /* underline the "Create Account" text */
+  color: #4f46e5;             /* optional: match theme color */
+  font-weight: 600;            /* optional: make it slightly bold */
+}
+
+.google {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px; /* space between icon and text, 2x original */
+  background: white;
+  color: #444; /* thick grey border */
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
